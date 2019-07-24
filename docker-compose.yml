@@ -5,7 +5,7 @@ services:
     volumes:
       - postgresdata:/var/lib/postgresql/data
     environment:
-      POSTGRES_DB: gheli
+      POSTGRES_DB: dango
       POSTGRES_USER: postgres
       POSTGRES_PASS: secret
   app:
@@ -19,6 +19,6 @@ services:
     environment:
       DEBUG: 1
       DEBUG_TOOLBAR: 1
-      DATABASE_URL: postgres://postgres:secret@db:5432/gheli
+      DATABASE_URL: postgres://postgres:secret@db:5432/dango
 volumes:
   postgresdata:
